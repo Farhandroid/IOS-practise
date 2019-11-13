@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FoodApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jZ9-fp-vdw">
+                                <rect key="frame" x="0.0" y="86" width="414" height="776"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1r4-Dv-fXZ">
+                                    <size key="itemSize" width="155" height="184"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellForFood" id="yFq-E9-nqg" customClass="CVCfood" customModule="FoodApp" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="155" height="184"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qyO-Hk-0sg">
+                                            <rect key="frame" x="0.0" y="0.0" width="155" height="184"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="french_fries" translatesAutoresizingMaskIntoConstraints="NO" id="iOi-gX-Cfk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="155" height="136"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="155" id="Cn4-wM-Grp"/>
+                                                        <constraint firstAttribute="height" constant="136" id="dcW-Ew-5f6"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tra-nU-aEt">
+                                                    <rect key="frame" x="0.0" y="152" width="155" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="UNm-Fa-hcp"/>
+                                                        <constraint firstAttribute="width" constant="155" id="Xsx-jv-Rke"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="iOi-gX-Cfk" secondAttribute="trailing" id="6Vp-5F-d6M"/>
+                                                <constraint firstItem="iOi-gX-Cfk" firstAttribute="top" secondItem="qyO-Hk-0sg" secondAttribute="top" id="6xt-H4-Qym"/>
+                                                <constraint firstAttribute="trailing" secondItem="iOi-gX-Cfk" secondAttribute="trailing" id="F0x-Hd-7wT"/>
+                                                <constraint firstAttribute="trailing" secondItem="tra-nU-aEt" secondAttribute="trailing" id="Yh0-Zv-cav"/>
+                                                <constraint firstItem="tra-nU-aEt" firstAttribute="leading" secondItem="qyO-Hk-0sg" secondAttribute="leading" id="a7m-HN-fS2"/>
+                                                <constraint firstItem="iOi-gX-Cfk" firstAttribute="top" secondItem="qyO-Hk-0sg" secondAttribute="top" id="dQX-LY-rfm"/>
+                                                <constraint firstItem="iOi-gX-Cfk" firstAttribute="leading" secondItem="qyO-Hk-0sg" secondAttribute="leading" id="i1v-Ya-bMI"/>
+                                                <constraint firstItem="tra-nU-aEt" firstAttribute="leading" secondItem="qyO-Hk-0sg" secondAttribute="leading" id="jof-za-7sI"/>
+                                                <constraint firstItem="iOi-gX-Cfk" firstAttribute="leading" secondItem="qyO-Hk-0sg" secondAttribute="leading" id="o1G-A9-15q"/>
+                                                <constraint firstAttribute="trailing" secondItem="tra-nU-aEt" secondAttribute="trailing" id="sW8-r1-Qfb"/>
+                                                <constraint firstAttribute="bottom" secondItem="tra-nU-aEt" secondAttribute="bottom" constant="8" id="xAL-XC-baS"/>
+                                                <constraint firstItem="tra-nU-aEt" firstAttribute="top" secondItem="iOi-gX-Cfk" secondAttribute="bottom" constant="16" id="xmG-Bl-3zx"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="155" height="184"/>
+                                        <connections>
+                                            <outlet property="foodImage" destination="iOi-gX-Cfk" id="XHd-hu-0Fc"/>
+                                            <outlet property="foodLabel" destination="tra-nU-aEt" id="r9E-Mk-fVK"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jZ9-fp-vdw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="0X2-bL-pHq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jZ9-fp-vdw" secondAttribute="bottom" id="Bu3-5v-L3B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jZ9-fp-vdw" secondAttribute="trailing" id="XlS-DJ-wyW"/>
+                            <constraint firstItem="jZ9-fp-vdw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mTv-Mh-nLh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="CVfood" destination="jZ9-fp-vdw" id="nAp-10-dlz"/>
+                        <segue destination="145-kF-p8r" kind="show" identifier="showFoodDetails" id="eGm-gL-qFJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+        <!--Food Details View Controller-->
+        <scene sceneID="SrM-Xf-zuU">
+            <objects>
+                <viewController id="145-kF-p8r" customClass="VCFoodDetailsViewController" customModule="FoodApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iW6-IT-6o1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jnL-ky-B26">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <items>
+                                    <navigationItem title="Title" id="5yz-vI-nKI">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="URj-nw-9hY">
+                                            <connections>
+                                                <action selector="navbarBackBTN:" destination="145-kF-p8r" id="58f-h3-NuL"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="french_fries" translatesAutoresizingMaskIntoConstraints="NO" id="Jnh-nB-qwu">
+                                <rect key="frame" x="76" y="127" width="263" height="237"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="237" id="6wI-Kq-TSg"/>
+                                    <constraint firstAttribute="width" constant="263" id="MbH-Lq-JFp"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9v-Tc-HSF">
+                                <rect key="frame" x="84" y="372" width="222" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mf7-gd-BTv">
+                                <rect key="frame" x="20" y="432" width="374" height="219"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jnL-ky-B26" firstAttribute="trailing" secondItem="8vi-qX-dy1" secondAttribute="trailing" id="4yQ-pZ-7np"/>
+                            <constraint firstItem="mf7-gd-BTv" firstAttribute="leading" secondItem="8vi-qX-dy1" secondAttribute="leading" constant="20" id="Fls-VX-cpF"/>
+                            <constraint firstItem="Jnh-nB-qwu" firstAttribute="leading" secondItem="8vi-qX-dy1" secondAttribute="leading" constant="76" id="H3c-hC-5Dd"/>
+                            <constraint firstItem="8vi-qX-dy1" firstAttribute="trailing" secondItem="Jnh-nB-qwu" secondAttribute="trailing" constant="75" id="HWw-kY-YbJ"/>
+                            <constraint firstItem="i9v-Tc-HSF" firstAttribute="leading" secondItem="8vi-qX-dy1" secondAttribute="leading" constant="84" id="Iny-qF-0jn"/>
+                            <constraint firstItem="i9v-Tc-HSF" firstAttribute="top" secondItem="Jnh-nB-qwu" secondAttribute="bottom" constant="8" id="Jpg-UN-fcP"/>
+                            <constraint firstItem="mf7-gd-BTv" firstAttribute="top" secondItem="i9v-Tc-HSF" secondAttribute="bottom" constant="37" id="OKO-kX-M12"/>
+                            <constraint firstItem="jnL-ky-B26" firstAttribute="top" secondItem="8vi-qX-dy1" secondAttribute="top" id="TFN-YF-Ygi"/>
+                            <constraint firstItem="jnL-ky-B26" firstAttribute="leading" secondItem="8vi-qX-dy1" secondAttribute="leading" id="ZVm-co-VbR"/>
+                            <constraint firstItem="Jnh-nB-qwu" firstAttribute="top" secondItem="jnL-ky-B26" secondAttribute="bottom" constant="71" id="ber-KJ-Ibd"/>
+                            <constraint firstItem="i9v-Tc-HSF" firstAttribute="top" secondItem="Jnh-nB-qwu" secondAttribute="bottom" constant="8" id="lPY-dv-8hP"/>
+                            <constraint firstItem="Jnh-nB-qwu" firstAttribute="top" secondItem="jnL-ky-B26" secondAttribute="bottom" constant="71" id="qNU-eO-Tjg"/>
+                            <constraint firstItem="8vi-qX-dy1" firstAttribute="bottom" secondItem="mf7-gd-BTv" secondAttribute="bottom" constant="108" id="r1o-xW-G8x"/>
+                            <constraint firstItem="8vi-qX-dy1" firstAttribute="trailing" secondItem="i9v-Tc-HSF" secondAttribute="trailing" constant="108" id="uPB-SV-9fU"/>
+                            <constraint firstItem="8vi-qX-dy1" firstAttribute="trailing" secondItem="mf7-gd-BTv" secondAttribute="trailing" constant="20" id="yBW-Ia-QPI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8vi-qX-dy1"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="XEc-a6-naK"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="IVFood" destination="Jnh-nB-qwu" id="1cM-ZT-W1O"/>
+                        <outlet property="LabelFood" destination="i9v-Tc-HSF" id="m3J-iA-ykQ"/>
+                        <outlet property="TVFoodDesc" destination="mf7-gd-BTv" id="YHH-u3-JZt"/>
+                        <outlet property="navbarBackBTN" destination="URj-nw-9hY" id="0OJ-U6-cQ1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FaL-7E-MhV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105.79710144927537" y="-540.40178571428567"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="french_fries" width="100" height="100"/>
+    </resources>
+</document>
